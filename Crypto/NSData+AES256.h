@@ -1,11 +1,3 @@
-//
-//  NSString+AES256.h
-//  SourceDrop
-//
-//  Created by Michael Hohl on 29.06.12.
-//  Copyright (c) 2012 Michael Hohl. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 ///

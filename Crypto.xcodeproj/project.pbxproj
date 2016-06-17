@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0DA54FF03ACE66BD2FD6D5 /* Pods_Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF1DED9999B3180FE3955F4 /* Pods_Crypto.framework */; };
+		393DFC781D148A57003FECA6 /* NSData+AES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 393DFC771D148A57003FECA6 /* NSData+AES256.m */; };
 		39F72D941D1447720013A0A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F72D931D1447720013A0A0 /* main.m */; };
 		39F72D971D1447720013A0A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F72D961D1447720013A0A0 /* AppDelegate.m */; };
 		39F72D9A1D1447720013A0A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F72D991D1447720013A0A0 /* ViewController.m */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		393DFC771D148A57003FECA6 /* NSData+AES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES256.m"; sourceTree = "<group>"; };
+		393DFC791D148ACD003FECA6 /* NSData+AES256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+AES256.h"; sourceTree = "<group>"; };
 		39F72D8F1D1447720013A0A0 /* Crypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F72D931D1447720013A0A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		39F72D951D1447720013A0A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		39F72DB31D1447720013A0A0 /* CryptoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F72DB71D1447720013A0A0 /* CryptoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptoUITests.m; sourceTree = "<group>"; };
 		39F72DB91D1447720013A0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C6AD1BDD49E5896E71A9BA6 /* Pods-Crypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto/Pods-Crypto.debug.xcconfig"; sourceTree = "<group>"; };
+		BBF1DED9999B3180FE3955F4 /* Pods_Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFAE6496E3D8FAC6800B7FC3 /* Pods-Crypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto/Pods-Crypto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F0DA54FF03ACE66BD2FD6D5 /* Pods_Crypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB3747BEC8AAAE9C7A80C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBF1DED9999B3180FE3955F4 /* Pods_Crypto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3702A92C997AB5529719F42A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C6AD1BDD49E5896E71A9BA6 /* Pods-Crypto.debug.xcconfig */,
+				CFAE6496E3D8FAC6800B7FC3 /* Pods-Crypto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		39F72D861D1447720013A0A0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				39F72DAB1D1447720013A0A0 /* CryptoTests */,
 				39F72DB61D1447720013A0A0 /* CryptoUITests */,
 				39F72D901D1447720013A0A0 /* Products */,
+				3702A92C997AB5529719F42A /* Pods */,
+				0BB3747BEC8AAAE9C7A80C60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +128,8 @@
 		39F72D911D1447720013A0A0 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				393DFC791D148ACD003FECA6 /* NSData+AES256.h */,
+				393DFC771D148A57003FECA6 /* NSData+AES256.m */,
 				39F72D951D1447720013A0A0 /* AppDelegate.h */,
 				39F72D961D1447720013A0A0 /* AppDelegate.m */,
 				39F72D981D1447720013A0A0 /* ViewController.h */,
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F72DBC1D1447720013A0A0 /* Build configuration list for PBXNativeTarget "Crypto" */;
 			buildPhases = (
+				1408CA7472524272F13660F0 /* Check Pods Manifest.lock */,
 				39F72D8B1D1447720013A0A0 /* Sources */,
 				39F72D8C1D1447720013A0A0 /* Frameworks */,
 				39F72D8D1D1447720013A0A0 /* Resources */,
+				A0DDAC3CF1E9DB966E879511 /* Embed Pods Frameworks */,
+				D116ACB6BFF165B9AFAD1EC1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +297,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1408CA7472524272F13660F0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DDAC3CF1E9DB966E879511 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto/Pods-Crypto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D116ACB6BFF165B9AFAD1EC1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto/Pods-Crypto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		39F72D8B1D1447720013A0A0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -272,6 +352,7 @@
 			files = (
 				39F72D9A1D1447720013A0A0 /* ViewController.m in Sources */,
 				39F72D971D1447720013A0A0 /* AppDelegate.m in Sources */,
+				393DFC781D148A57003FECA6 /* NSData+AES256.m in Sources */,
 				39F72D941D1447720013A0A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +492,7 @@
 		};
 		39F72DBD1D1447720013A0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C6AD1BDD49E5896E71A9BA6 /* Pods-Crypto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Crypto/Info.plist;
@@ -422,6 +504,7 @@
 		};
 		39F72DBE1D1447720013A0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFAE6496E3D8FAC6800B7FC3 /* Pods-Crypto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Crypto/Info.plist;
@@ -496,6 +579,7 @@
 				39F72DBE1D1447720013A0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F72DBF1D1447720013A0A0 /* Build configuration list for PBXNativeTarget "CryptoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +588,7 @@
 				39F72DC11D1447720013A0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F72DC21D1447720013A0A0 /* Build configuration list for PBXNativeTarget "CryptoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +597,7 @@
 				39F72DC41D1447720013A0A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
+
 
 @interface AppDelegate ()
 
 @end
+
+
 
 @implementation AppDelegate
 
@@ -43,3 +48,4 @@
 }
 
 @end
+
